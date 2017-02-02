@@ -25,7 +25,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 require_once plugin_dir_path(__FILE__) . '/config-path.php';
-require_once plugin_dir_path(__FILE__).'/includes/JobFinderPlugin.php';
+require_once JOBFINDER_PlUGIN_DIR.'/includes/common/JobFinderAutoload.php';
+require_once JOBFINDER_PlUGIN_DIR.'/includes/JobFinderPlugin.php';
 
 register_activation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'deactivation' ) );
