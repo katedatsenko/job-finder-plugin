@@ -24,5 +24,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-require_once dirname(__FILE__).'/includes/JobFinderPlugin.php'; //Подключение класса плагина к файлу плагина
+require_once plugin_dir_path(__FILE__) . '/config-path.php';
+require_once plugin_dir_path(__FILE__).'/includes/StepByStepPlugin.php';
+
 ?>
