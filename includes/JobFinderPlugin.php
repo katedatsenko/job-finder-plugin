@@ -22,5 +22,10 @@ class JobFinderPlugin
         return self::$instance;
     }
 
+    static public function activation()
+     {
+         // debug.log
+         error_log('plugin '.JOBFINDER_PlUGIN_NAME.' activation');
+     }
 }
 JobFinderPlugin::getInstance();
