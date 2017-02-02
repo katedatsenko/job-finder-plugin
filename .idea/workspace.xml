@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0808c2d6-f308-496d-9e44-b2f58117d83c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/job-finder-plugin.php" afterPath="$PROJECT_DIR$/job-finder-plugin.php" />
-    </list>
+    <list default="true" id="0808c2d6-f308-496d-9e44-b2f58117d83c" name="Default" comment="" />
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,12 +22,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="job-finder-plugin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="job-finder-plugin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job-finder-plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29310346">
+            <state vertical-scroll-proportion="-6.5384617">
               <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobFinderPlugin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29310346">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +64,7 @@
       <list>
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/job-finder-plugin.php" />
+        <option value="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
       </list>
     </option>
   </component>
@@ -114,6 +125,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -233,9 +258,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job-finder-plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29310346">
+        <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29310346">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
