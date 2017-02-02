@@ -27,5 +27,11 @@ class JobFinderPlugin
          // debug.log
          error_log('plugin '.JOBFINDER_PlUGIN_NAME.' activation');
      }
+
+    static public function deactivation()
+     {
+         // debug.log
+         error_log('plugin '.JOBFINDER_PlUGIN_NAME.' deactivation');
+     }
 }
 JobFinderPlugin::getInstance();
