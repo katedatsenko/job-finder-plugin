@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0808c2d6-f308-496d-9e44-b2f58117d83c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/JobFinderPlugin.php" afterPath="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/job-finder-plugin.php" afterPath="$PROJECT_DIR$/job-finder-plugin.php" />
-    </list>
+    <list default="true" id="0808c2d6-f308-496d-9e44-b2f58117d83c" name="Default" comment="" />
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,11 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderPlugin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobFinderPlugin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8241379">
+            <state vertical-scroll-proportion="-18.384615">
               <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobFinderAutoload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/common/JobFinderAutoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8241379">
+              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
@@ -100,6 +109,7 @@
         <option value="$PROJECT_DIR$/uninstall.php" />
         <option value="$PROJECT_DIR$/job-finder-plugin.php" />
         <option value="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
+        <option value="$PROJECT_DIR$/includes/common/JobFinderAutoload.php" />
       </list>
     </option>
   </component>
@@ -174,6 +184,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,8 +353,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8241379">
+        <state vertical-scroll-proportion="-18.384615">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common/JobFinderAutoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8241379">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
