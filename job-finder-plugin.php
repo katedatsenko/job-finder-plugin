@@ -6,7 +6,10 @@ Description: Plugin for obtaining relevant and fresh vacancies.
 Version: 1.0
 Author: ekaterinadatsenko
 Author URI: https://vk.com/kate.datsenko
+Text Domain: job-finder-plugin
+Domain Path: /languages/
 License: A "Slug" license name e.g. GPL2
+
 
 Copyright 2017  Datsenko Ekaterina  (email: kate.datsenko@gmail.com)
 
@@ -30,4 +33,5 @@ require_once JOBFINDER_PlUGIN_DIR.'/includes/JobFinderPlugin.php';
 
 register_activation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'deactivation' ) );
+error_log(JOBFINDER_PlUGIN_TEXTDOMAIN);
 ?>

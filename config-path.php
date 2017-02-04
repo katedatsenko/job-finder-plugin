@@ -18,5 +18,6 @@ define("JOBFINDER_PlUGIN_AJAX_URL", admin_url('admin-ajax.php'));
     }
  $TPOPlUGINs = get_plugin_data(JOBFINDER_PlUGIN_DIR.'/'.basename(JOBFINDER_PlUGIN_DIR).'.php', false, false);
 
- define("STEPBYSTEP_PlUGIN_VERSION", $TPOPlUGINs['Version']);
- define("STEPBYSTEP_PlUGIN_NAME", $TPOPlUGINs['Name']);
+ define("JOBFINDER_PlUGIN_VERSION", $TPOPlUGINs['Version']);
+ define("JOBFINDER_PlUGIN_NAME", $TPOPlUGINs['Name']);
+define("JOBFINDER_PlUGIN_DIR_LOCALIZATION", plugin_basename(JOBFINDER_PlUGIN_DIR.'/languages/'));

@@ -8,10 +8,13 @@
 
 namespace includes;
 
+use includes\common\JobFinderLoader;
+
 class JobFinderPlugin
 {
     private static $instance = null;
     private function __construct() {
+        JobFinderLoader::getInstance();
     }
     public static function getInstance() {
 
