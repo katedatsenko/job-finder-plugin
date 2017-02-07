@@ -54,8 +54,8 @@ class JobFinderLoader
      * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
      */
     public function all(){
+        //Вызов класса includes\common\JobFinderLocalization в загрузчике классов
         JobFinderLocalization::getInstance();
-       // StepByStepLocalization::getInstance();
 
     }
 }
