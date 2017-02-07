@@ -9,12 +9,18 @@
 namespace includes;
 
 use includes\common\JobFinderLoader;
+use includes\example\JobFinderExampleFilter;
 
 class JobFinderPlugin
 {
     private static $instance = null;
     private function __construct() {
         JobFinderLoader::getInstance();
+
+        $jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
+        $jobFinderExampleFilter->callMyFilter("Kate");
+
+
     }
     public static function getInstance() {
 

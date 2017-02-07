@@ -6,6 +6,8 @@
  * Date: 007 07.02.17
  * Time: 13:50
  */
+namespace includes\example;
+
 class JobFinderExampleFilter
 {
     public function __construct() {
