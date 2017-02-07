@@ -10,6 +10,7 @@ namespace includes;
 
 use includes\common\JobFinderLoader;
 use includes\example\JobFinderExampleFilter;
+use includes\example\JobFinderExampleAction;
 
 class JobFinderPlugin
 {
@@ -19,6 +20,8 @@ class JobFinderPlugin
 
         //$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
         //$jobFinderExampleFilter->callMyFilter("Kate");
+        $jobFinderExampleAction = JobFinderExampleAction::newInstance();
+        $jobFinderExampleAction->callMyAction();
 
 
     }

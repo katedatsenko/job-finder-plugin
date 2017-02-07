@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="" />
+    <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/JobFinderPlugin.php" afterPath="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
+    </list>
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -34,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderPlugin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JobFinderPlugin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.423077">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.5523466">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding>
                 <element signature="e#111#147#0#PHP" expanded="true" />
               </folding>
@@ -46,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderExampleAction.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobFinderExampleAction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/example/JobFinderExampleAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78519857">
+            <state vertical-scroll-proportion="-16.73077">
               <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding />
             </state>
@@ -70,8 +72,8 @@
         <option value="$PROJECT_DIR$/includes/common/JobFinderAutoload.php" />
         <option value="$PROJECT_DIR$/job-finder-plugin.php" />
         <option value="$PROJECT_DIR$/includes/example/JobFinderExampleFilter.php" />
-        <option value="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
         <option value="$PROJECT_DIR$/includes/example/JobFinderExampleAction.php" />
+        <option value="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
       </list>
     </option>
   </component>
@@ -321,21 +323,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
+    <entry file="file://$PROJECT_DIR$/includes/example/JobFinderExampleAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.423077">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#111#147#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-16.73077">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/example/JobFinderExampleAction.php">
+    <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78519857">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.5523466">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="e#111#147#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
