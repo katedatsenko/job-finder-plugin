@@ -20,7 +20,7 @@ class JobFinderPlugin
 
         //$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
         //$jobFinderExampleFilter->callMyFilter("Kate");
-        //$jobFinderExampleAction = JobFinderExampleAction::newInstance();
+        $jobFinderExampleAction = JobFinderExampleAction::newInstance();
         //$jobFinderExampleAction->callMyAction();
 
 
