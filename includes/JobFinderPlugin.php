@@ -17,8 +17,8 @@ class JobFinderPlugin
     private function __construct() {
         JobFinderLoader::getInstance();
 
-        $jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
-        $jobFinderExampleFilter->callMyFilter("Kate");
+        //$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
+        //$jobFinderExampleFilter->callMyFilter("Kate");
 
 
     }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/JobFinderPlugin.php" afterPath="$PROJECT_DIR$/includes/JobFinderPlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/example/JobFinderExampleFilter.php" afterPath="$PROJECT_DIR$/includes/example/JobFinderExampleFilter.php" />
     </list>
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.20758122">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="e#111#147#0#PHP" expanded="true" />
               </folding>
@@ -316,7 +315,7 @@
     <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20758122">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
             <element signature="e#111#147#0#PHP" expanded="true" />
           </folding>
