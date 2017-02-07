@@ -7,6 +7,8 @@
  */
 
 namespace includes\common;
+use includes\example\JobFinderExampleAction;
+use includes\example\JobFinderExampleFilter;
 
 
 class JobFinderLoader
@@ -56,6 +58,12 @@ class JobFinderLoader
     public function all(){
         //Вызов класса includes\common\JobFinderLocalization в загрузчике классов
         JobFinderLocalization::getInstance();
-
+        $jobFinderExampleAction = JobFinderExampleAction::newInstance();
+        /*$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
+        $jobFinderExampleFilter->callMyFilter("Kate");
+        $jobFinderExampleFilter->callMyFilterAdditionalParameter("Kate", "Wordpress", "Softgroup");
+        $jobFinderExampleAction = JobFinderExampleAction::newInstance();
+        $jobFinderExampleAction->callMyAction();
+        $jobFinderExampleAction->callMyActionAdditionalParameter('1', '2', '3');*/
     }
 }

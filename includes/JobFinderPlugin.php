@@ -9,22 +9,14 @@
 namespace includes;
 
 use includes\common\JobFinderLoader;
-//use includes\example\JobFinderExampleFilter;
-//use includes\example\JobFinderExampleAction;
+
 
 class JobFinderPlugin
 {
     private static $instance = null;
     private function __construct() {
+
         JobFinderLoader::getInstance();
-
-        /*$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
-        $jobFinderExampleFilter->callMyFilter("Kate");
-        $jobFinderExampleFilter->callMyFilterAdditionalParameter("Kate", "Wordpress", "Softgroup");
-        $jobFinderExampleAction = JobFinderExampleAction::newInstance();
-        $jobFinderExampleAction->callMyAction();
-        $jobFinderExampleAction->callMyActionAdditionalParameter('1', '2', '3');*/
-
 
     }
     public static function getInstance() {
