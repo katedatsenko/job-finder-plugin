@@ -33,5 +33,7 @@ require_once JOBFINDER_PlUGIN_DIR.'/includes/JobFinderPlugin.php';
 
 register_activation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'deactivation' ) );
-error_log(JOBFINDER_PlUGIN_TEXTDOMAIN);
+
+error_log(STEPBYSTEP_PlUGIN_URL_IMG);
+
 ?>

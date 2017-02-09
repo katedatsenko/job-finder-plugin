@@ -7,6 +7,7 @@
  */
 
 namespace includes\common;
+use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
 
