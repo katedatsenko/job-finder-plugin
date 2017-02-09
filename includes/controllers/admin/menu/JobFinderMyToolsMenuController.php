@@ -15,7 +15,7 @@ class JobFinderMyToolsMenuController extends JobFinderBaseAdminMenuController
     {
         // TODO: Implement action() method.
 
-        $pluginPage = add_tools_page(
+        $pluginPage = add_management_page(
             __('Sub tools Job Finder', JOBFINDER_PlUGIN_TEXTDOMAIN),
             __('Sub tools Job Finder', JOBFINDER_PlUGIN_TEXTDOMAIN),
             'read',
