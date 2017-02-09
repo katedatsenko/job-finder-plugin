@@ -7,6 +7,7 @@
  */
 
 namespace includes\common;
+use includes\controllers\admin\menu\JobFinderMainAdminMenuController;
 use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
@@ -43,7 +44,8 @@ class JobFinderLoader
      * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
      */
     public function admin(){
-        add_action('plugins_loaded', function(){ error_log(__('Hello', JOBFINDER_PlUGIN_TEXTDOMAIN)); }, 1000);
+
+        JobFinderMainAdminMenuController::newInstance();
     }
 
     /**

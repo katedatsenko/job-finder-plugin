@@ -42,6 +42,7 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
+        _e("Hello world", JOBFINDER_PlUGIN_TEXTDOMAIN);
 
     }
 
