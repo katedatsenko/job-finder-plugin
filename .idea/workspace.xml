@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/JobFinderLoaderScript.php" afterPath="$PROJECT_DIR$/includes/common/JobFinderLoaderScript.php" />
     </list>
     <ignored path="job-finder-plugin.iws" />
@@ -89,12 +90,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderLoaderScript.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobFinderLoaderScript.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoaderScript.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8592058">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state vertical-scroll-proportion="-14.115385">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobFinderAdminMain.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/JobFinderAdminMain.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14655173">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,17 +132,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderMyDashboardMenuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyDashboardMenuController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.3076925">
-              <caret line="31" column="37" selection-start-line="30" selection-start-column="12" selection-end-line="31" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,6 +170,7 @@
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyOptionsMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyToolsMenuController.php" />
         <option value="$PROJECT_DIR$/includes/common/JobFinderLoaderScript.php" />
+        <option value="$PROJECT_DIR$/assets/js/JobFinderAdminMain.js" />
       </list>
     </option>
   </component>
@@ -293,6 +304,24 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -400,7 +429,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
+            <element signature="e#7#89#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -511,7 +540,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
+            <element signature="e#7#89#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,9 +714,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoaderScript.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8592058">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <state vertical-scroll-proportion="-14.115385">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/JobFinderAdminMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14655173">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
