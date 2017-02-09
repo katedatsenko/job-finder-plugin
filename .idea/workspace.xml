@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/main-menu.png" afterPath="$PROJECT_DIR$/assets/images/main-menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/JobFinderLoader.php" afterPath="$PROJECT_DIR$/includes/common/JobFinderLoader.php" />
     </list>
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderMainAdminSubMenuController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobFinderMainAdminSubMenuController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18411553">
+            <state vertical-scroll-proportion="-3.9230769">
               <caret line="11" column="41" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="41" />
               <folding />
             </state>
@@ -65,13 +65,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobFinderLoader.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JobFinderLoader.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.5397112">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="42" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
+                <element signature="e#118#187#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +81,8 @@
       <file leaf-file-name="JobFinderMyDashboardMenuController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyDashboardMenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.8461537">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state vertical-scroll-proportion="-1.6923077">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -147,9 +148,9 @@
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderBaseAdminMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminMenuController.php" />
         <option value="$PROJECT_DIR$/job-finder-plugin.php" />
-        <option value="$PROJECT_DIR$/includes/common/JobFinderLoader.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyDashboardMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" />
+        <option value="$PROJECT_DIR$/includes/common/JobFinderLoader.php" />
       </list>
     </option>
   </component>
@@ -358,7 +359,7 @@
     <option name="totallyTimeSpent" value="9000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -438,6 +439,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
+            <element signature="e#118#187#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,29 +586,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoader.php">
+    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMyDashboardMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.8461537">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state vertical-scroll-proportion="-1.6923077">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php">
+    <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18411553">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="41" />
-          <folding />
+        <state vertical-scroll-proportion="0.5397112">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <element signature="e#118#187#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
