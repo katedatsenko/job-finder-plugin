@@ -10,7 +10,9 @@ namespace includes\common;
 use includes\controllers\admin\menu\JobFinderMainAdminMenuController;
 use includes\controllers\admin\menu\JobFinderMainAdminSubMenuController;
 use includes\controllers\admin\menu\JobFinderMyDashboardMenuController;
+use includes\controllers\admin\menu\JobFinderMyMediaMenuController;
 use includes\controllers\admin\menu\JobFinderMyPostsMenuController;
+
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
 
@@ -51,6 +53,7 @@ class JobFinderLoader
         JobFinderMainAdminSubMenuController::newInstance();
         JobFinderMyDashboardMenuController::newInstance();
         JobFinderMyPostsMenuController::newInstance();
+        JobFinderMyMediaMenuController::newInstance();
     }
 
     /**
