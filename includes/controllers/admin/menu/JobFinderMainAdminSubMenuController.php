@@ -14,7 +14,7 @@ class JobFinderMainAdminSubMenuController extends JobFinderBaseAdminMenuControll
     public function action()
     {
         // TODO: Implement action() method.
-        $plugin_page = add_submenu_page(
+        $pluginPage = add_submenu_page(
         JOBFINDER_PlUGIN_TEXTDOMAIN,
         _x(
             'Sub Job Finder',
