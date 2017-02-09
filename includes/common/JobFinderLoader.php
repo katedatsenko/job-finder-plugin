@@ -8,7 +8,7 @@
 
 namespace includes\common;
 use includes\controllers\admin\menu\JobFinderMainAdminMenuController;
-use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
+use includes\controllers\admin\menu\JobFinderMainAdminSubMenuController;
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
 
@@ -46,6 +46,7 @@ class JobFinderLoader
     public function admin(){
 
         JobFinderMainAdminMenuController::newInstance();
+        JobFinderMainAdminSubMenuController::newInstance();
     }
 
     /**
