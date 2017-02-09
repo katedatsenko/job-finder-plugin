@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-interface JobFinderIСreatorInstance
+interface JobFinderICreatorInstance
 {
     public static function newInstance();
 }
