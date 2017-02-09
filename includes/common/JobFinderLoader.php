@@ -82,6 +82,7 @@ class JobFinderLoader
     public function all(){
         //Вызов класса includes\common\JobFinderLocalization в загрузчике классов
         JobFinderLocalization::getInstance();
+        JobFinderLoaderScript::getInstance();
         //$jobFinderExampleAction = JobFinderExampleAction::newInstance();
         /*$jobFinderExampleFilter = JobFinderExampleFilter::newInstance();
         $jobFinderExampleFilter->callMyFilter("Kate");
