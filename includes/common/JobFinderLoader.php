@@ -11,6 +11,7 @@ use includes\controllers\admin\menu\JobFinderMainAdminMenuController;
 use includes\controllers\admin\menu\JobFinderMainAdminSubMenuController;
 use includes\controllers\admin\menu\JobFinderMyDashboardMenuController;
 use includes\controllers\admin\menu\JobFinderMyMediaMenuController;
+use includes\controllers\admin\menu\JobFinderMyOptionsMenuController;
 use includes\controllers\admin\menu\JobFinderMyPluginsMenuController;
 use includes\controllers\admin\menu\JobFinderMyPostsMenuController;
 use includes\controllers\admin\menu\JobFinderMyPagesMenuController;
@@ -65,6 +66,7 @@ class JobFinderLoader
         JobFinderMyPluginsMenuController::newInstance();
         JobFinderMyUsersMenuController::newInstance();
         JobFinderMyToolsMenuController::newInstance();
+        JobFinderMyOptionsMenuController::newInstance();
     }
 
     /**
