@@ -85,11 +85,20 @@ class JobFinderLoaderScript
          * Правильно добавляет файл CSS стилей. Регистрирует файл стилей, если он еще не был зарегистрирован.
          */
 
-        wp_enqueue_style(STEPBYSTEP_PlUGIN_SLUG.'-AdminMain');
+        wp_enqueue_style(JOBFINDER_PlUGIN_SLUG.'-AdminMain');
 
     }
-    public function loadHeadScriptAdmin(){}
-    public function loadScriptSite($hook){}
+    public function loadHeadScriptAdmin(){
+        ?>
+            <script type="text/javascript">
+                var jobFinderAjaxUrl;
+                jobFinderAjaxUrl  = '<?php echo JOBFINDER_PlUGIN_AJAX_URL; ?>';
+            </script>
+        <?php
+    }
+    public function loadScriptSite($hook){
+        //Подключение скриптов для frontend
+    }
     public function loadHeadScriptSite(){}
     public function loadFooterScriptSite(){}
 
