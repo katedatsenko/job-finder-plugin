@@ -9,7 +9,7 @@
 
 namespace includes\controllers\admin\menu;
 
-abstract class JobFinderBaseAdminMenuController implements SingletonInterface
+abstract class JobFinderBaseAdminMenuController implements JobFinderIСreatorInstance
 {
     public function __construct(){
         /*
