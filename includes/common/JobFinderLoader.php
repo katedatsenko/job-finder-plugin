@@ -16,6 +16,7 @@ use includes\controllers\admin\menu\JobFinderMyPostsMenuController;
 use includes\controllers\admin\menu\JobFinderMyPagesMenuController;
 use includes\controllers\admin\menu\JobFinderMyCommentsMenuController;
 use includes\controllers\admin\menu\JobFinderMyThemeMenuController;
+use includes\controllers\admin\menu\JobFinderMyToolsMenuController;
 use includes\controllers\admin\menu\JobFinderMyUsersMenuController;
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
@@ -63,6 +64,7 @@ class JobFinderLoader
         JobFinderMyThemeMenuController::newInstance();
         JobFinderMyPluginsMenuController::newInstance();
         JobFinderMyUsersMenuController::newInstance();
+        JobFinderMyToolsMenuController::newInstance();
     }
 
     /**
