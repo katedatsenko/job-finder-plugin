@@ -5,7 +5,7 @@
     width: 50%;
 }
 /* Базовые стили формы */
-form {
+.temporary {
     margin:0 auto;
     max-width:95%;
     box-sizing:border-box;
