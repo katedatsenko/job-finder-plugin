@@ -11,6 +11,10 @@ namespace includes\common;
 
 class JobFinderRequestApi
 {
+    const JOBFINDER_API = "https://api.rabota.ua/vacancy/search";
+    const JOBFINDER_TOKEN = "b2f8bef81735323aecb33e285da8e694";
+    const JOBFINDER_MARKER = "17942";
+
     private static $instance = null;
 
     private function __construct()
