@@ -9,10 +9,16 @@ namespace includes\controllers\site\shortcodes;
 
 use includes\common\JobFinderRequestApi;
 use includes\controllers\admin\menu\JobFinderICreatorInstance;
+use includes\models\site\JobFinderMyExampleShortcodeModel;
 
 class JobFinderMyExampleShortcodeController extends JobFinderShortcodesController
     implements JobFinderICreatorInstance
 {
+    public $model;
+    public function __construct() {
+        parent::__construct();
+        $this->model = JobFinderMyExampleShortcodeModel::newInstance();
+    }
 
     /**
      * Функция в которой будем добалять шорткоды через функцию add_shortcode( $tag , $func );
@@ -60,9 +66,10 @@ class JobFinderMyExampleShortcodeController extends JobFinderShortcodesControlle
             'salary' => '0',
             'period' => 0,
             ), $atts, $tag );
-        $requestAPI = JobFinderRequestApi::getInstance();
+        /*$requestAPI = JobFinderRequestApi::getInstance();
         $data = $requestAPI->getVacancies($atts['cityId'], $atts['keyWords'],
-            $atts['salary'], $atts['period']);
+            $atts['salary'], $atts['period']);*/
+        $data = $this->model->getData($atts['cityId'], $atts['keyWords'],$atts['salary'], $atts['period']);
         if ($data == false) return false;
         return $this->render($data);
     }
