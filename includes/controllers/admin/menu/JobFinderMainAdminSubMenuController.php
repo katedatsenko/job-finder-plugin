@@ -7,6 +7,7 @@
  */
 
 namespace includes\controllers\admin\menu;
+use includes\common\JobFinderRequestApi;
 
 
 class JobFinderMainAdminSubMenuController extends JobFinderBaseAdminMenuController
@@ -35,6 +36,9 @@ class JobFinderMainAdminSubMenuController extends JobFinderBaseAdminMenuControll
     {
         // TODO: Implement render() method.
         _e("Hello world sub menu", JOBFINDER_PlUGIN_TEXTDOMAIN);
+
+        $requestAPI = JobFinderRequestApi::getInstance();
+        var_dump($requestAPI->getVacancies( 17, 'developer', 0, 0));
     }
 
     public static function newInstance()

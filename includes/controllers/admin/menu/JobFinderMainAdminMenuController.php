@@ -9,6 +9,8 @@
 namespace includes\controllers\admin\menu;
 
 
+
+
 class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
 {
     public function action()
@@ -43,6 +45,7 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
     {
         // TODO: Implement render() method.
         require_once JOBFINDER_PlUGIN_DIR . '/includes/controllers/admin/views/main-admin.php';
+
 
     }
 
