@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/JobFinderRequestApi.php" afterPath="$PROJECT_DIR$/includes/common/JobFinderRequestApi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminMenuController.php" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminMenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" />
-    </list>
+    <list default="true" id="e6df6af0-87a1-4d90-b811-acddb6a8f6bc" name="Default" comment="" />
     <ignored path="job-finder-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,12 +22,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JobFinderRequestApi.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobFinderRequestApi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/common/JobFinderRequestApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5397112">
+            <state vertical-scroll-proportion="-11.5">
               <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobFinderShortcodesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/JobFinderShortcodesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8158845">
+              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+              <folding>
+                <element signature="e#7#88#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +162,7 @@
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminMenuController.php" />
         <option value="$PROJECT_DIR$/includes/common/JobFinderRequestApi.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/JobFinderMainAdminSubMenuController.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/site/shortcodes/JobFinderShortcodesController.php" />
       </list>
     </option>
   </component>
@@ -228,6 +237,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job-finder-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shortcodes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,17 +498,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/common/JobFinderLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="false" />
-            <element signature="e#118#187#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/JobFinderPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -865,9 +889,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/common/JobFinderRequestApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5397112">
+        <state vertical-scroll-proportion="-11.5">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/JobFinderShortcodesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8158845">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
