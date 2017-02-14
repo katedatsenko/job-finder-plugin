@@ -28,7 +28,10 @@ class JobFinderMyPostsMenuController extends JobFinderBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
-        _e("Hello this page posts", JOBFINDER_PlUGIN_TEXTDOMAIN);
+        $out = "<div >";
+        $out .= "<h5>This is a guest post by <a href='#'>Hello</a></h5>";
+        $out .= "<div >Hello world</div></div>";
+        _e($out, JOBFINDER_PlUGIN_TEXTDOMAIN);
     }
 
     public static function newInstance()
