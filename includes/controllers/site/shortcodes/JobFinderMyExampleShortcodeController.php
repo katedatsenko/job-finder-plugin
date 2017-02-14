@@ -61,7 +61,7 @@ class JobFinderMyExampleShortcodeController extends JobFinderShortcodesControlle
             'period' => 0,
             ), $atts, $tag );
         $requestAPI = JobFinderRequestApi::getInstance();
-        $data = $requestAPI->getMyExample($atts['cityId'], $atts['keyWords'],
+        $data = $requestAPI->getVacancies($atts['cityId'], $atts['keyWords'],
             $atts['salary'], $atts['period']);
         if ($data == false) return false;
         return $this->render($data);
