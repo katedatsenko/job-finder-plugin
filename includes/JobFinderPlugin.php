@@ -52,6 +52,9 @@ class JobFinderPlugin
      {
          // debug.log
          error_log('plugin '.JOBFINDER_PlUGIN_NAME.' deactivation');
+         delete_option(JOBFINDER_PlUGIN_OPTION_NAME);
+         delete_option(JOBFINDER_PlUGIN_OPTION_VERSION);
+
      }
 }
 JobFinderPlugin::getInstance();
