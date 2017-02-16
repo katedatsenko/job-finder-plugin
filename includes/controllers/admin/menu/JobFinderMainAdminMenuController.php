@@ -46,7 +46,7 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
         // TODO: Implement render() method.
         $pathView = JOBFINDER_PlUGIN_DIR."/includes/views/admin/menu/JobFinderMainAdminMenu.view.php";
         $this->loadView($pathView);
-        
+
     }
 
     public static function newInstance()
