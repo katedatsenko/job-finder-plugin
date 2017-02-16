@@ -9,6 +9,7 @@
 namespace includes;
 
 use includes\common\JobFinderLoader;
+use includes\common\JobFinderDefaultOption;
 
 
 class JobFinderPlugin
@@ -17,6 +18,7 @@ class JobFinderPlugin
     private function __construct() {
 
         JobFinderLoader::getInstance();
+        add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
 
     }
     public static function getInstance() {
@@ -26,6 +28,18 @@ class JobFinderPlugin
         }
 
         return self::$instance;
+    }
+
+    /**
+     * Если не созданные настройки установить по умолчанию
+     */
+    public function setDefaultOptions(){
+        if( ! get_option(JOBFINDER_PlUGIN_OPTION_NAME) ){
+            update_option( JOBFINDER_PlUGIN_OPTION_NAME, JobFinderDefaultOption::getDefaultOptions());
+        }
+        if( ! get_option(JOBFINDER_PlUGIN_OPTION_VERSION) ){
+            update_option(JOBFINDER_PlUGIN_OPTION_VERSION, JOBFINDER_PlUGIN_VERSION);
+        }
     }
 
     static public function activation()
