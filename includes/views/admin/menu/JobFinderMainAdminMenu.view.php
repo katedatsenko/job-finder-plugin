@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Kate
- * Date: 017 17.02.17
- * Time: 1:05
- */
+<form action="options.php" method="POST">
+    <?php
+        settings_fields( 'JobFinderMainSettings' );     // скрытые защитные поля
+        do_settings_sections( 'job-finder-plugin' ); // секции с настройками (опциями). У нас она всего одна 'section_id'
+        submit_button();
+    ?>
+</form>

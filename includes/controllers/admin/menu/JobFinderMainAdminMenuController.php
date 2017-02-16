@@ -20,7 +20,7 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
         parent::__construct();
         $this->model = JobFinderMainAdminMenuModel::newInstance();
     }
-    
+
     public function action()
     {
         // TODO: Implement action() method.
