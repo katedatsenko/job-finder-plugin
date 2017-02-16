@@ -30,6 +30,8 @@ class JobFinderMyExampleShortcodeModel implements JobFinderICreatorInstance
         $data = array();
         $cacheKey = $this->getCacheKey($keyWords, $salary, $cityId);
         if ( false === ($data = get_transient($cacheKey))) {
+            //error.log
+            error_log("Проверка работы кеша. Будет срабатывать когда нет данных в кеше.");
             $requestAPI = JobFinderRequestApi::getInstance();
             $data = $requestAPI->getVacancies($cityId, $keyWords, $salary, $period);
             set_transient($cacheKey, $data, 100);
