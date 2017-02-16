@@ -8,11 +8,19 @@
 
 namespace includes\controllers\admin\menu;
 
+use includes\models\admin\menu\JobFinderMainAdminMenuModel;
+
 
 
 
 class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
 {
+    public $model;
+    public function __construct(){
+        parent::__construct();
+        $this->model = JobFinderMainAdminMenuModel::newInstance();
+    }
+    
     public function action()
     {
         // TODO: Implement action() method.
