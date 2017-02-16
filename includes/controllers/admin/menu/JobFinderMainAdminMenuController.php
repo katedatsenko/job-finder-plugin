@@ -44,7 +44,7 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
-        require_once JOBFINDER_PlUGIN_DIR . '/includes/controllers/admin/views/main-admin.php';
+        require_once JOBFINDER_PlUGIN_DIR . '/includes/views/main-admin.php';
 
 
     }
