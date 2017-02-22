@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 use includes\models\admin\menu\JobFinderMainAdminMenuModel;
-
+use includes\common\JobFinderRequestApi;
 
 
 
@@ -52,6 +52,22 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
+        if (isset($_POST)){
+            $requestAPI = JobFinderRequestApi::getInstance();
+
+        }
+        $option = get_option(JOBFINDER_PlUGIN_OPTION_NAME);
+        $requestAPI = JobFinderRequestApi::getInstance();
+        $cityid = '';
+        if (isset($option['vacancies']['city'])) {
+            $cityid = $requestAPI->getCity($option['vacancies']['city']);
+        }
+        $array = $requestAPI->getVacancies( $cityid, $option['vacancies'] ['keyWords'], $option['vacancies'] ['noSalary'],
+            $option['vacancies'] ['salary']);
+        var_dump($array);
+
+
+
         $pathView = JOBFINDER_PlUGIN_DIR."/includes/views/admin/menu/JobFinderMainAdminMenu.view.php";
         $this->loadView($pathView);
 

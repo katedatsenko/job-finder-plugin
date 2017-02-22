@@ -18,9 +18,11 @@ class JobFinderDefaultOption
     public static function getDefaultOptions()
     {
         $defaults = array(
-            'account' => array(
-                'marker' => '',
-                'token' => ''
+            'vacancies' => array(
+                'city' => '',
+                'keyWords' => '',
+                'noSalary' => '',
+                'salary' => ''
             )
         );
         // Фильтр которому можно подключиться и изменить массив дефолтных настроек

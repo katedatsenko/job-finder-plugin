@@ -10,7 +10,7 @@ namespace includes;
 
 use includes\common\JobFinderLoader;
 use includes\common\JobFinderDefaultOption;
-
+use includes\models\admin\menu\JobFinderDataBaseModel;;
 
 class JobFinderPlugin
 {
@@ -46,6 +46,7 @@ class JobFinderPlugin
      {
          // debug.log
          error_log('plugin '.JOBFINDER_PlUGIN_NAME.' activation');
+         JobFinderDataBaseModel::createTable();
      }
 
     static public function deactivation()

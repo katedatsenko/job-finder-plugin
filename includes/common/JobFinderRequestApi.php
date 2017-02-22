@@ -12,8 +12,7 @@ namespace includes\common;
 class JobFinderRequestApi
 {
     const JOBFINDER_API = "https://api.rabota.ua/vacancy/search";
-    const JOBFINDER_TOKEN = "b2f8bef81735323aecb33e285da8e694";
-    const JOBFINDER_MARKER = "17942";
+    const JOBFINDER_API_CITY = "https://api.rabota.ua/autocomplete/city";
 
     private static $instance = null;
 
@@ -29,48 +28,62 @@ class JobFinderRequestApi
         return self::$instance;
     }
 
-    public function getToken(){
+    /*public function getToken(){
         return "&token=".self::JOBFINDER_TOKEN;
-    }
+    }*/
 
 
-    public function getVacancies ($cityId, $keyWords, $salary, $period){
+    public function getVacancies ($cityid, $keyWords, $noSalary, $salary ){
         $requestURL = "";
-        if ($cityId == false || empty($cityId)){
-            $cityId = 0;
-        }
         if ($keyWords == false || empty($keyWords)){
             return false;
         }
-        if ($salary == false || empty($salary)){
-            $salary = false;
+        /*if (empty($noSalary)){
+            $noSalary = false;
+        }*/
+        if (empty($salary)){
+            $salary = 0;
         }
-        if ($period == false || empty($period)){
-            $period = 0;
-        }
-
 
         $url = self::JOBFINDER_API;
 
         // параметры запроса
                 $body = array(
-                    'cityId' => $cityId,
+                    'cityid' => $cityid,
                     'keyWords' => $keyWords,
+                    'noSalary' => $noSalary,
                     'salary' => $salary,
-                    'period' => $period,
                 );
 
         // настройки запроса
         $args = array(
             'body' => $body,
-            'timeout' => '5',
+            'timeout' => '20',
         );
 
         $response = wp_remote_post( $url, $args );
         $json = wp_remote_retrieve_body($response);
 
-        return $json;
+        return json_decode($json, true);
 
+    }
+
+    public function getCity ($city) {
+        $requestURL = "";
+        if ($city == false || empty($city)){
+            return false;
+        }
+
+        $response = wp_remote_get( self::JOBFINDER_API_CITY."?term={$city}");
+
+        $body = wp_remote_retrieve_body($response);
+
+        $json = json_decode($body, true);
+        if (!is_wp_error($json)) {
+            return $json[0]['id'];
+        } else {
+            return false;
+        }
     }
 
 

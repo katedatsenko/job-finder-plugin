@@ -52,7 +52,7 @@ class JobFinderLoaderScript
          *                          этого тема должна содержать функцию wp_footer() перед закрывающим тегом </body>.
          */
 
-        wp_register_script(
+        /*wp_register_script(
             JOBFINDER_PlUGIN_SLUG.'-AdminMain', //$handle
             JOBFINDER_PlUGIN_URL.'assets/admin/js/JobFinderAdminMain.js', //$src
             array(
@@ -60,7 +60,7 @@ class JobFinderLoaderScript
             ), //$deps
             JOBFINDER_PlUGIN_VERSION, //$ver
             true //$$in_footer
-        );
+        );*/
 
         /**
          * Добавляет скрипт, только если он еще не был добавлен и другие скрипты от которых он зависит зарегистрированы.

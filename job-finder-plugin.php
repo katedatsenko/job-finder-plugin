@@ -33,6 +33,7 @@ require_once JOBFINDER_PlUGIN_DIR.'/includes/JobFinderPlugin.php';
 
 register_activation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'deactivation' ) );
+register_activation_hook(__FILE__,'createTable');
 
 
 
