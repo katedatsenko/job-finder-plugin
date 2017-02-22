@@ -64,6 +64,12 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
         }
         $array = $requestAPI->getVacancies( $cityid, $option['vacancies'] ['keyWords'], $option['vacancies'] ['noSalary'],
             $option['vacancies'] ['salary']);
+        foreach ($array as $key) {
+            echo "**********************";
+            foreach ($key as $key1) {
+                echo '<pre>' .$key1. '</pre>'; 
+            }
+        }
         echo '<pre>';
         var_dump($array);
         echo '</pre>';

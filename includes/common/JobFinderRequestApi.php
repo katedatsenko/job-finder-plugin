@@ -63,8 +63,9 @@ class JobFinderRequestApi
 
         $response = wp_remote_post( $url, $args );
         $json = wp_remote_retrieve_body($response);
+        $arr = json_decode($json, true);
 
-        return json_decode($json, true);
+        return $arr['documents'];
 
     }
 
