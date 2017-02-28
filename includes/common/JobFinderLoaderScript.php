@@ -89,6 +89,22 @@ class JobFinderLoaderScript
 
         wp_enqueue_style(JOBFINDER_PlUGIN_SLUG.'-AdminMain');
 
+        $version = null;
+        wp_register_script(
+            JOBFINDER_PlUGIN_SLUG.'-Main', //$handle
+            JOBFINDER_PlUGIN_URL.'assets/admin/js/JobFinderMain.js', //$src
+            array(
+                'jquery'
+            ), //$deps
+            $version, //$ver
+            true //$$in_footer
+        );
+        /**
+         * Добавляет скрипт, только если он еще не был добавлен и другие скрипты от которых он зависит зарегистрированы.
+         * Зависимые скрипты добавляются автоматически.
+         */
+        wp_enqueue_script(JOBFINDER_PlUGIN_SLUG.'-Main');
+
     }
     public function loadHeadScriptAdmin(){
         ?>
@@ -97,6 +113,8 @@ class JobFinderLoaderScript
                 jobFinderAjaxUrl  = '<?php echo JOBFINDER_PlUGIN_AJAX_URL; ?>';
             </script>
         <?php
+
+
     }
     public function loadScriptSite($hook){
         //Подключение скриптов для frontend
@@ -109,7 +127,7 @@ class JobFinderLoaderScript
             JOBFINDER_PlUGIN_VERSION, //$ver
             true //$$in_footer
         );
-        wp_enqueue_script(JOBFINDER_PlUGIN_SLUG.'-AdminMain');
+        //wp_enqueue_script(JOBFINDER_PlUGIN_SLUG.'-AdminMain');
     }
     public function loadHeadScriptSite(){}
     public function loadFooterScriptSite(){}

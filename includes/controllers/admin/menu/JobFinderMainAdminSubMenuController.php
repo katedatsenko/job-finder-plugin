@@ -8,10 +8,24 @@
 
 namespace includes\controllers\admin\menu;
 use includes\common\JobFinderRequestApi;
-
+use includes\models\admin\menu\JobFinderMainAdminMenuModel;
 
 class JobFinderMainAdminSubMenuController extends JobFinderBaseAdminMenuController
 {
+    public $model;
+    public function __construct(){
+        parent::__construct();
+        $this->model = JobFinderMainAdminMenuModel::newInstance();
+        // подключаем AJAX обработчики, только когда в этом есть смысл
+        if( defined('DOING_AJAX') && DOING_AJAX ){
+            add_action('wp_ajax_vacancies', array( &$this, 'ajaxHandler'));
+        }
+    }
+    /**
+     * Обработчик для ajax действия guest_book (wp_ajax_guest_book, wp_ajax_nopriv_guest_book)
+     */
+    public function ajaxHandler(){
+    }
     public function action()
     {
         // TODO: Implement action() method.
@@ -34,11 +48,8 @@ class JobFinderMainAdminSubMenuController extends JobFinderBaseAdminMenuControll
 
     public function render()
     {
-        // TODO: Implement render() method.
-        _e("Hello world sub menu", JOBFINDER_PlUGIN_TEXTDOMAIN);
-
-        $requestAPI = JobFinderRequestApi::getInstance();
-        var_dump($requestAPI->getVacancies( 17, 'developer', 0, 0));
+        $pathView = JOBFINDER_PlUGIN_DIR."/includes/views/admin/menu/JobFinderAjax.view.php";
+        $this->loadView($pathView);
     }
 
     public static function newInstance()

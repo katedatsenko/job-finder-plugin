@@ -9,8 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 use includes\models\admin\menu\JobFinderMainAdminMenuModel;
-use includes\common\JobFinderRequestApi;
-
+use includes\models\admin\menu\JobFinderUpdateDataModel;
 
 
 class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
@@ -52,33 +51,28 @@ class JobFinderMainAdminMenuController extends JobFinderBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
-        if (isset($_POST)){
-            $requestAPI = JobFinderRequestApi::getInstance();
-
-        }
-        $option = get_option(JOBFINDER_PlUGIN_OPTION_NAME);
-        $requestAPI = JobFinderRequestApi::getInstance();
-        $cityid = '';
-        if (isset($option['vacancies']['city'])) {
-            $cityid = $requestAPI->getCity($option['vacancies']['city']);
-        }
-        $array = $requestAPI->getVacancies( $cityid, $option['vacancies'] ['keyWords'], $option['vacancies'] ['noSalary'],
-            $option['vacancies'] ['salary']);
-        foreach ($array as $key) {
-            echo "**********************";
-            foreach ($key as $key1) {
-                echo '<pre>' .$key1. '</pre>'; 
-            }
-        }
-        echo '<pre>';
-        var_dump($array);
-        echo '</pre>';
-
-
 
         $pathView = JOBFINDER_PlUGIN_DIR."/includes/views/admin/menu/JobFinderMainAdminMenu.view.php";
         $this->loadView($pathView);
-
+        echo '<div><h4>Шорткод для вставки [job_finder_vacancies]</h4></div>  ';
+        echo '<h3>Предварительный просмотр</h3>';
+        echo '<hr>';
+        $option = get_option(JOBFINDER_PlUGIN_OPTION_NAME);
+        $model = JobFinderUpdateDataModel::newInstance();
+        $array = $model->updateData($option['vacancies']['city'], $option['vacancies'] ['keywords'], $option['vacancies'] ['nosalary'],
+            $option['vacancies'] ['salary']);
+        if ($array != false) {
+            foreach ($array as $key) {
+                echo '<div>';
+                echo '<h4>Название вакансии: ' . $key['name']. '</h4> ';
+                echo '<label>Компания: ' . $key['companyName']. '</label> <br>';
+                echo '<label>Зарплата: ' . $key['salary']. ' грн. </label> <br>';
+                echo '<label>Сайт компании: ' . $key['contactURL']. '</label> <br>';
+                echo '<a href="https://rabota.ua/company'.$key['notebookId'].'/vacancy'.$key['id'].'">Перейти к вакансии</a><br>' ;
+                echo '<hr>';
+                echo '</div>';
+            }
+        }
     }
 
     public static function newInstance()

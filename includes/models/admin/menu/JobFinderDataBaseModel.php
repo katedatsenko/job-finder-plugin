@@ -31,9 +31,10 @@ class JobFinderDataBaseModel
         // Проверяем на наличие таблицы в базе данных и если ее нет то создаем
         if($wpdb->get_var("show tables like '$tableName'") != $tableName) {
 
-            $sql = "CREATE TABLE" .$tableName. "(
+            $sql = "CREATE TABLE " .$tableName. "(
 
-            id int(11) NOT NULL AUTO_INCREMENT,
+            id_vacancies int(11) NOT NULL AUTO_INCREMENT,
+            id int(11) NOT NULL,
             notebookId int(11),
             name varchar(255),
             cityName varchar(255),
@@ -62,7 +63,7 @@ class JobFinderDataBaseModel
             branchName varchar(255),
             isLiked boolean,
 
-            PRIMARY KEY  (id)
+            PRIMARY KEY  (id_vacancies)
             ) CHARACTER SET utf8 COLLATE utf8_general_ci;";
         
             require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
@@ -87,9 +88,9 @@ class JobFinderDataBaseModel
       * @param $data
       * @return mixed
       */
-     static public function insert($data){
+     static public function insert($array){
          global $wpdb;
-         $id = $wpdb->insert( self::getTableName(), $data);
+         $id = $wpdb->insert( self::getTableName(), $array);
          return $id;
      }
 
@@ -114,6 +115,11 @@ class JobFinderDataBaseModel
          $wpdb->query("DELETE FROM ".self::getTableName()." WHERE id = '".$id ."'");
      }
 
+     static public function deleteAll(){
+         global $wpdb;
+         $wpdb->query("DELETE FROM ".self::getTableName());
+     }
+
     /**
      * Метод удаляет таблицу в базе данных
      */
@@ -130,9 +136,9 @@ class JobFinderDataBaseModel
      static public function getAll()
      {
          // TODO: Implement getAll() method.
-          if (self::issetTable() == false) return false;
+          //if (self::issetTable() == false) return false;
          global $wpdb;
-         $data = $wpdb->get_results( "SELECT * FROM ".self::getTableName()." ORDER BY date_add DESC", ARRAY_A);
+         $data = $wpdb->get_results( "SELECT * FROM ".self::getTableName()." ORDER BY addDate DESC", ARRAY_A);
          if(count($data) > 0) return $data;
          return false;
      }

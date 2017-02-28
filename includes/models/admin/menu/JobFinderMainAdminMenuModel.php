@@ -31,33 +31,33 @@ class JobFinderMainAdminMenuModel implements JobFinderICreatorInstance
         register_setting('JobFinderMainSettings', JOBFINDER_PlUGIN_OPTION_NAME, array(&$this, 'saveOption'));
         // add_settings_section( $id, $title, $callback, $page );
         // Добавление секции опций
-        add_settings_section( 'job_finder_vacancies_section_id', __('Vacancies', JOBFINDER_PlUGIN_TEXTDOMAIN), '', 'job-finder-plugin' );
+        add_settings_section( 'job_finder_vacancies_section_id', __('Поиск вакансий', JOBFINDER_PlUGIN_TEXTDOMAIN), '', 'job-finder-plugin' );
         // add_settings_field( $id, $title, $callback, $page, $section, $args );
         // Добавление полей опций
         add_settings_field(
             'job_finder_city_field_id',
-            __('City', JOBFINDER_PlUGIN_TEXTDOMAIN),
+            __('Город', JOBFINDER_PlUGIN_TEXTDOMAIN),
             array(&$this, 'cityField'),
             'job-finder-plugin',
             'job_finder_vacancies_section_id'
         );
         add_settings_field(
             'job_finder_keyWords_field_id',
-            __('KeyWords', JOBFINDER_PlUGIN_TEXTDOMAIN),
+            __('Ключевые слова', JOBFINDER_PlUGIN_TEXTDOMAIN),
             array(&$this, 'keyWordsField'),
             'job-finder-plugin',
             'job_finder_vacancies_section_id'
         );
         add_settings_field(
             'job_finder_noSalary_field_id',
-            __('NoSalary', JOBFINDER_PlUGIN_TEXTDOMAIN),
+            __('Показывать вакансии без з.п.', JOBFINDER_PlUGIN_TEXTDOMAIN),
             array(&$this, 'noSalaryField'),
             'job-finder-plugin',
             'job_finder_vacancies_section_id'
         );
         add_settings_field(
             'job_finder_salary_field_id',
-            __('Salary', JOBFINDER_PlUGIN_TEXTDOMAIN),
+            __('Зарплата', JOBFINDER_PlUGIN_TEXTDOMAIN),
             array(&$this, 'salaryField'),
             'job-finder-plugin',
             'job_finder_vacancies_section_id'
@@ -71,23 +71,26 @@ class JobFinderMainAdminMenuModel implements JobFinderICreatorInstance
         ?>
         <input type="text"
                name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][city]"
-               value="<?php echo esc_attr( $option['vacancies']['city'] ) ?>" />
+               value="<?php echo esc_attr( $option['vacancies']['city'] ) ?>"
+               class="job-finder-option-city"/>
         <?php
     }
     public function keyWordsField(){
         $option = get_option(JOBFINDER_PlUGIN_OPTION_NAME);
         ?>
         <input type="text"
-               name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][keyWords]"
-               value="<?php echo esc_attr( $option['vacancies']['keyWords'] ) ?>" />
+               name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][keywords]"
+               value="<?php echo esc_attr( $option['vacancies']['keywords'] ) ?>"
+               class="job-finder-option-keywords"/>
         <?php
     }
     public function noSalaryField(){
         $option = get_option(JOBFINDER_PlUGIN_OPTION_NAME);
         ?>
-        <input type="checkbox"
-               name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][noSalary]"
-               value="<?php echo esc_attr( $option['vacancies']['noSalary'] ) ?>" />
+        <input type="checkbox" 
+               name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][nosalary]"
+               value="<?php echo esc_attr( $option['vacancies']['nosalary'] ) ?>"
+               class="job-finder-option-nosalary"/>
         <?php
     }
     public function salaryField(){
@@ -95,7 +98,8 @@ class JobFinderMainAdminMenuModel implements JobFinderICreatorInstance
         ?>
         <input type="number"
                name="<?php echo JOBFINDER_PlUGIN_OPTION_NAME; ?>[vacancies][salary]"
-               value="<?php echo esc_attr( $option['vacancies']['salary'] ) ?>" />
+               value="<?php echo esc_attr( $option['vacancies']['salary'] ) ?>"
+               class="job-finder-option-salary"/>
         <?php
     }
 

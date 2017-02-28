@@ -20,8 +20,8 @@ class JobFinderDefaultOption
         $defaults = array(
             'vacancies' => array(
                 'city' => '',
-                'keyWords' => '',
-                'noSalary' => '',
+                'keywords' => '',
+                'nosalary' => '',
                 'salary' => ''
             )
         );

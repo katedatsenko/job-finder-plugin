@@ -22,6 +22,9 @@ use includes\controllers\admin\menu\JobFinderMyUsersMenuController;
 use includes\controllers\site\shortcodes\JobFinderMyExampleShortcodeController;
 use includes\example\JobFinderExampleAction;
 use includes\example\JobFinderExampleFilter;
+use includes\controllers\site\shortcodes\JobFinderVacanciesShortcodeController;
+use includes\ajax\JobFinderVacanciesAjaxHandler;
+use includes\widgets\JobFinderVacanciesDashboardWidget;
 
 
 class JobFinderLoader
@@ -68,13 +71,16 @@ class JobFinderLoader
         JobFinderMyUsersMenuController::newInstance();
         JobFinderMyToolsMenuController::newInstance();
         JobFinderMyOptionsMenuController::newInstance();
+        JobFinderVacanciesAjaxHandler::newInstance();
+        JobFinderVacanciesDashboardWidget::newInstance();
     }
 
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
      */
     public function site(){
-        JobFinderMyExampleShortcodeController::newInstance();
+        //JobFinderMyExampleShortcodeController::newInstance();
+        JobFinderVacanciesShortcodeController::newInstance();
     }
 
     /**

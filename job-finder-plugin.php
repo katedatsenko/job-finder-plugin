@@ -31,9 +31,10 @@ require_once plugin_dir_path(__FILE__) . '/config-path.php';
 require_once JOBFINDER_PlUGIN_DIR.'/includes/common/JobFinderAutoload.php';
 require_once JOBFINDER_PlUGIN_DIR.'/includes/JobFinderPlugin.php';
 
+add_action('widgets_init', create_function('', 'return register_widget("includes\widgets\JobFinderVacanciesWidget");'));
+
 register_activation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\JobFinderPlugin' ,  'deactivation' ) );
-register_activation_hook(__FILE__,'createTable');
 
 
 

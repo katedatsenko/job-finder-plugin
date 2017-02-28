@@ -10,7 +10,9 @@ namespace includes;
 
 use includes\common\JobFinderLoader;
 use includes\common\JobFinderDefaultOption;
-use includes\models\admin\menu\JobFinderDataBaseModel;;
+use includes\models\admin\menu\JobFinderDataBaseModel;
+use includes\custom_post_type\MusicianPerformerPostType;
+
 
 class JobFinderPlugin
 {
@@ -19,6 +21,8 @@ class JobFinderPlugin
 
         JobFinderLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
+        // Создаем Custom Post Type Musician Performer
+                new MusicianPerformerPostType();
 
     }
     public static function getInstance() {

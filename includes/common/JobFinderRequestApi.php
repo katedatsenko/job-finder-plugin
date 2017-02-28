@@ -33,16 +33,16 @@ class JobFinderRequestApi
     }*/
 
 
-    public function getVacancies ($cityid, $keyWords, $noSalary, $salary ){
+    public function getVacancies ($cityid, $keywords, $nosalary, $salary ){
         $requestURL = "";
-        if ($keyWords == false || empty($keyWords)){
+        if ($keywords == false || empty($keywords)){
             return false;
         }
-        /*if (empty($noSalary)){
-            $noSalary = false;
-        }*/
+        if (empty($nosalary)){
+            $nosalary = false;
+        }
         if (empty($salary)){
-            $salary = 0;
+            $salary = 5000;
         }
 
         $url = self::JOBFINDER_API;
@@ -50,8 +50,8 @@ class JobFinderRequestApi
         // параметры запроса
                 $body = array(
                     'cityid' => $cityid,
-                    'keyWords' => $keyWords,
-                    'noSalary' => $noSalary,
+                    'keywords' => $keywords,
+                    'nosalary' => $nosalary,
                     'salary' => $salary,
                 );
 
